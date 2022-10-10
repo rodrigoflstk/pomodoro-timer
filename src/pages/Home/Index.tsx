@@ -14,10 +14,10 @@ function Home() {
     <HomeContainer>
       <form action="">
         <FormContainer>
-          <label htmlFor="task">Vou trabalhar em</label>
+          <label htmlFor="task">Working in</label>
           <TaskInput
             list="task-suggestions"
-            placeholder="Dê um nome para o seu projeto"
+            placeholder="Write your task name"
             id="task"
           />
 
@@ -28,7 +28,7 @@ function Home() {
             <option value="projeto4"></option>
           </datalist>
 
-          <label htmlFor="minutesAmount">durante</label>
+          <label htmlFor="minutesAmount">for</label>
           <MinutesAmountInput
             placeholder="00"
             id="minutesAmount"
@@ -38,7 +38,7 @@ function Home() {
             max={60}
           />
 
-          <span>minutos.</span>
+          <span>minutes.</span>
         </FormContainer>
 
         <CountdownContainer>
@@ -51,7 +51,7 @@ function Home() {
 
         <StartCountdownButton disabled type="submit">
           <Play size={24} />
-          Começar
+          Start
         </StartCountdownButton>
       </form>
     </HomeContainer>
